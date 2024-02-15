@@ -21,5 +21,4 @@ The Snacks Tracker is a web application built with Django. This application allo
 The application includes tests for verifying the correct status codes for the home and about pages and ensuring the appropriate templates are used, including the ancestor template.
 
 ## Resources
-
 I used the help of the class demo as well as ChatGPT for this assignment. 

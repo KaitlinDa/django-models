@@ -16,3 +16,11 @@ class SnackListView(ListView):
 class SnackDetailView(DetailView):
     model = Snack
     template_name = 'snack_detail.html'
+
+class SnackListView(ListView):
+    model = Snack
+    template_name = 'snack_list.html'
+
+class SnackDetailView(DetailView):
+    model = Snack
+    template_name = 'snack_detail.html'

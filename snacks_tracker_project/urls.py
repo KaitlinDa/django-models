@@ -1,3 +1,4 @@
+from django.contrib import admin
 from django.urls import include, path
 
 """
@@ -16,14 +17,10 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
-from django.urls import path, include  # Remember to import 'include'
-from snacks.views import HomePageView, AboutPageView  # Corrected import statement
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('snacks.urls')),  # Assuming 'snacks.urls' is correctly set up
-    path('about/', AboutPageView.as_view(), name='about'),
+    path('', include('snacks.urls')), 
 ]
 
 
